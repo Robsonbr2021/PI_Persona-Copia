@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PERSONA MAKER</title>
+    <link rel="stylesheet" href="./css/index.css">
+    <link rel="stylesheet" href="./css/style-menu.css">
+</head>
+<body>
+    <div class="container">
+        <div class="persona">
+            <div class="inform">
+
+                <div class="input_name_editable" contenteditable="">
+                    <div class="input-viewer">
+                        MARIA DOS SANTOS
+                    </div>
+                </div>
+
+                <div class="input_age_editable">
+                    <div class="input-label">IDADE<!-- -->: </div>
+                    <div class="input-viewer" contenteditable="">32 ANOS
+                    </div>
+                </div>
+
+                <div class="input_residence_editable">
+                        <div class="input-label">ENDEREÇO<!-- -->: </div>
+                        <div class="input-viewer" contenteditable="">Residente em área de risco em Ubatuba no litoral norte.
+                            </div>
+                </div>
+
+                <div class="input_education_editable">
+                        <div class="input-label">EDUCAÇÃO<!-- -->: </div>
+                        <div class="input-viewer" contenteditable="">Ensino Fundamental.
+                        </div>      
+                </div>
+
+                <div class="input_occupation_editable">
+                    <div class="input-label">OCUPAÇÃO<!-- -->: </div>
+                    <div class="input-viewer" contenteditable="">Doméstica e catadora de recicláveis.
+                    </div>
+                </div>
+
+                <div class="input_marital_status_editable">
+                    <div class="input-label">ESTADO CIVIL<!-- -->: </div>
+                    <div class="input-viewer" contenteditable="">Casada, três filhos.</div>
+                </div>
+
+                <div class="row_persona-quote">
+                    <div class="input_quote_editable">
+                        <div class="input-viewer" contenteditable="">Ciente dos riscos que ameaçam sua família procura por um sistema de alerta e abrigo em caso de catástrofe causada por chuvas fortes no morro onde mora.</div>
+                    </div>
+                </div>
+
+                <div class="persona-image-wrapper">
+                    <div class="persona-image-container-editable" contenteditable="">
+                        <img class="persona-image-img" src="https://observatorio3setor.org.br/wp-content/uploads/2020/03/IMG_1278.jpg"/>
+                    </div>
+                </div>
+                
+
+            </div><!--inform-->
+            
+        </div><!--persona-->
+        
+    </div><!--container-->
+
+
+    <script>
+        // Selecione todos os elementos com a classe 'editable'
+const elements = document.querySelectorAll('.editable');
+
+// Adicione um ouvinte de eventos de clique a cada elemento
+elements.forEach(element => {
+  element.addEventListener('click', () => {
+    // Adicione o atributo 'contenteditable' para permitir a edição do elemento
+    element.setAttribute('contenteditable', true);
+  });
+});
+    </script>
+<!--Jornada -->
+<div class="container_user-journey">
+    <div class="persona">
+        <div class="inform">
+            <div class="journey">
+                <section class="menu-section">
+                    <h2 class="menu-heading">Jornada do Usuário</h2>
+    
+                    <nav class="single-nav menu">
+                        <ul>
+                            <li><a href="#">Pesquisa:</a></li>
+                            <li><a href="#">Site de Busca</a></li>
+                            <li><a href="#">Rede Social</a></li>
+                            <li><a href="#">Amigos</a></li>
+                            <li><a href="#">Jornais</a></li>
+                            <li><a href="#">TV</a></li>
+                            
+                        </ul>
+                    </nav>
+                </section><!--menu-section-->
+                <div class="section-one">
+                    <div class=".section-one-data">
+                        <div class="input-label">INÍCIO<!-- -->: </div>
+                        <div class="input-viewer-data" contenteditable="">	
+                        <ul class="input_data">
+                            <li>Maria ouve notícias sobre uma enchente iminente em sua região e se preocupa com a segurança de sua família e vizinhos.</li>
+                            <li>Maria pesquisa na internet sobre como pode ajudar como voluntária em situações de enchentes e encontra o aplicativo de cadastro de voluntários.</li>
+                            <li>Maria realiza o cadastro no aplicativo, informando suas habilidades de primeiros socorros e disponibilidade de tempo.</li>
+                            <li>Após o cadastro, Maria recebe notificações sobre situações de enchentes em sua região e se desloca para os pontos de encontro e resgate indicados pelo aplicativo.</li>
+                            <li>Maria auxilia as vítimas de enchente, prestando primeiros socorros, distribuindo alimentos e água, e colaborando com os demais voluntários.</li>
+                            <li>Maria posta no aplicativo relatório da situação e atividades realizadas</li>
+
+                        </ul>    
+                        </div>
+                    </div>
+
+                    <div class="row_persona-quote">
+                        <div class="input_data_editable">
+                            <div class="input-viewer" contenteditable="">Texto editável</div>
+                        </div>
+                    </div>
+                </div><!--section-one-->
+
+
+            </div><!--journey-->
+                
+
+        </div><!--inform-->
+        
+    </div><!--persona-->
+    
+</div><!--container-->
+
+</body>
+</html>
